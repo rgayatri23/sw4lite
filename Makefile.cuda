@@ -31,7 +31,7 @@ else
    NVCC = nvcc
    HOSTCOMP = gcc
    MPIPATH = $(dir $(shell which mpicc))../
-   gpuarch := sm_60
+   gpuarch := sm_70
    EXTRA_LINK_FLAGS = -lmpi -llapack
    MPIINC = $(MPIPATH)/include
    debugdir := debug_cuda
